@@ -1,3 +1,7 @@
+body {
+  background: rgb(188, 203, 226);
+}
+
 #container {
   width: 360px;
   margin: 100px auto;
@@ -9,6 +13,16 @@ ul {
   padding: 0;
 }
 
+li {
+  height: 40px;
+  line-height: 40px;
+
+}
+
+li:nth-child(2n) {
+  background-color: rgb(213, 220, 232);
+}
+
 h1 {
   margin: 0;
   padding: 10px 20px;
@@ -18,4 +32,26 @@ h1 {
 
 .fa-plus {
   float: right;
+}
+
+span {
+  margin-right: 20px;
+  text-align: center;
+  height: 40px;
+  color: white;
+  width: 0;
+  display: inline-block;
+  background: red;
+  opacity: 0;
+  transition: .2s linear;
+}
+
+li:hover span {
+  width: 40px;
+  opacity: 1.0;
+}
+
+.completed {
+  color: gray;
+  text-decoration: line-through;
 }
